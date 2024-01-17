@@ -8,6 +8,7 @@ public class Jugador {
 
     }
 
+    //Recibe las posiciones que debe avanzar y se las añade a la posición del jugador
     public void moverJugador(int cantidadDePasos){
         this.posJugador += cantidadDePasos;
 

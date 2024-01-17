@@ -11,6 +11,8 @@ public class Juego {
         Jugador J2 = new Jugador('Z');
         t.mensajeBienvenida();
         t.dibujarTablero(J1,J2);
+
+        //Un bucle que termina cuando el booleano ganador tenga valor true
         while (!ganador){
             if (turnoJugador==0){
                 System.out.println("Es tu turno Jugador "+ J1.fichaJugador);
@@ -37,6 +39,8 @@ public class Juego {
         }
 
     }
+
+    //Cambia el turno entre el jugador 1 y el jugador 2
     public static int cambiarTurno(int turnoActual){
         if (turnoActual == 0){
             return 1;

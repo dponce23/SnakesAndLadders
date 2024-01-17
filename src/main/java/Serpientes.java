@@ -1,5 +1,7 @@
 public class Serpientes {
     int[] serpientes = {15,34};
+
+    //Comprueba si la ficha del jugador cae en una casilla de serpiente.
     public void comprobarserpientes(Jugador jugador){
         if (jugador.posJugador == serpientes[0]){
             System.out.println("OH OH, has caido en una serpiente =(, retrocedes hasta la casilla --> 6");

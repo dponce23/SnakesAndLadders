@@ -1,6 +1,7 @@
 public class Tablero {
     private final int[][]  posicionesTablero = new int[6][6];
 
+    //El metodo recorre la matriz de las posiciones para crear el tablero utilizando el metodo comprobarPosicionJugador.
     public void dibujarTablero(Jugador jugador1, Jugador jugador2){
         System.out.println("--------------------------------");
         int casillas=0;
@@ -13,6 +14,7 @@ public class Tablero {
         }
     }
 
+    //Comprueba las posiciones de los jugadores para mostrar por pantalla las fichas de los jugadores o el numero de la casilla
     private void comprobarPosicionJugador(int casilla, Jugador jugador1, Jugador jugador2){
         if (jugador1.posJugador == casilla && jugador2.posJugador == casilla) {
             System.out.print(" "+jugador1.fichaJugador + "" + jugador2.fichaJugador);
@@ -29,6 +31,7 @@ public class Tablero {
 
         }
     }
+    //Muestra por pantalla un mensaje de bienvenida para explicar un poco el juego
     public void mensajeBienvenida(){
         System.out.println("Bienvenidos al juego de Snakes&Ladders creado por Diego Ponce");
         System.out.println("El juego es por turnos y las reglas son las siguientes:");
