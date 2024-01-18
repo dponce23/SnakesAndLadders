@@ -8,7 +8,7 @@ public class Serpientes {
             jugador.posJugador = 6;
         } else if (jugador.posJugador == serpientes[1]) {
             System.out.println("Tienes muy mala suerte..., has caido en la peor serpiente, retrocedes hasta la casilla -->¡¡ 1 !!");
-            jugador.posJugador = 25;
+            jugador.posJugador = 1;
         }
     }
 }

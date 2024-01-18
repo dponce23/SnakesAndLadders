@@ -41,6 +41,7 @@ public class Juego {
     }
 
     //Cambia el turno entre el jugador 1 y el jugador 2
+
     public static int cambiarTurno(int turnoActual){
         if (turnoActual == 0){
             return 1;
