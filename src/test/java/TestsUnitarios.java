@@ -13,11 +13,11 @@ public class TestsUnitarios {
 
 
             jugador.posJugador = 1;
-            escaleras.comprobarEscaleras(jugador);
+            escaleras.comprobarEscalerasYSerpientes(jugador);
             assertEquals(10, jugador.posJugador);
 
             jugador.posJugador = 20;
-            escaleras.comprobarEscaleras(jugador);
+            escaleras.comprobarEscalerasYSerpientes(jugador);
             assertEquals(25, jugador.posJugador);
 
         }
@@ -28,11 +28,11 @@ public class TestsUnitarios {
         Serpientes serpientes = new Serpientes();
 
         jugador.posJugador = 15;
-        serpientes.comprobarserpientes(jugador);
+        serpientes.comprobarEscalerasYSerpientes(jugador);
         assertEquals(6, jugador.posJugador);
 
         jugador.posJugador = 34;
-        serpientes.comprobarserpientes(jugador);
+        serpientes.comprobarEscalerasYSerpientes(jugador);
         assertEquals(1, jugador.posJugador);
 
     }

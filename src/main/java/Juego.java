@@ -18,14 +18,14 @@ public class Juego {
                 System.out.println("Es tu turno Jugador "+ J1.fichaJugador);
                 d.tirarDado();
                 J1.moverJugador(d.tirada);
-                e.comprobarEscaleras(J1);
-                s.comprobarserpientes(J1);
+                e.comprobarEscalerasYSerpientes(J1);
+                s.comprobarEscalerasYSerpientes(J1);
             }else{
                 System.out.println("Es tu turno Jugador "+ J2.fichaJugador);
                 d.tirarDado();
                 J2.moverJugador(d.tirada);
-                e.comprobarEscaleras(J2);
-                s.comprobarserpientes(J2);
+                e.comprobarEscalerasYSerpientes(J2);
+                s.comprobarEscalerasYSerpientes(J2);
             }
             t.dibujarTablero(J1,J2);
             if (J1.posJugador > 35 ){
